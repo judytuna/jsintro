@@ -158,7 +158,7 @@ total = <strong>multiplier(</strong>val1, val2<strong>)</strong>;
 <p>Variables declared with var inside a function are local to that function</p>
 <p>Variables defined in a function without being locally declared are global. Arguments are always local whether implicit or explicit.</p>
 <pre contenteditable>function kiss(){
-  for(<strong>i = 0</strong>; i < <strong>arguments.length</strong>; i++){
+  for(<strong>var i = 0</strong>; i < <strong>arguments.length</strong>; i++){
 	console.log("I want to kiss " + <strong>arguments[i]</strong>)
   }
 }
